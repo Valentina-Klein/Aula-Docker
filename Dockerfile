@@ -16,7 +16,7 @@ COPY pom.xml pom.xml
 COPY src src
 
 # Garante a permissão e compila gerando o .jar (pulando os testes para poupar RAM)
-RUN chmod +x mvnw && ./mvnw clean package -DskipTests
+RUN  mvn clean package -DskipTests
 
 # ========================================================
 # ETAPA 2: RUN (Execução super leve usando apenas o JRE)

@@ -1,7 +1,7 @@
 # ========================================================
 # ETAPA 1: BUILD (Compilação usando o JDK)
 # ========================================================
-FROM eclipse-temurin:21-jdk-alpine AS build
+FROM maven:3.9-eclipse-temurin-17 AS build
 
 # Define diretório de trabalho
 WORKDIR /app

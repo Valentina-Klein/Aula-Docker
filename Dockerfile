@@ -10,7 +10,7 @@ WORKDIR /app
 ENV JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=60.0 -XX:TieredStopAtLevel=1"
 
 # Copia os arquivos de configuração do Maven e o código fonte do seu PC
-COPY .mvn .mvn
+# COPY .mvn .mvn
 COPY mvnw mvnw
 COPY pom.xml pom.xml
 COPY src src
